@@ -7,14 +7,6 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 
 
 const SliderSick = () => {
-    const sliderRef = useRef(null);
-    const goToNext = () => {
-        sliderRef.current.slickNext();
-      };
-    
-      const goToPrev = () => {
-        sliderRef.current.slickPrev();
-      };
     const settings = {
         dots: true,
         infinite: true,
@@ -25,7 +17,6 @@ const SliderSick = () => {
         autoplaySpeed: 2000,
         className: "center",
        
- 
       };
     return (
         <div className='container mx-auto '>
@@ -36,7 +27,7 @@ const SliderSick = () => {
                         <div className='bg-orange-400 w-[150px] h-[2px]'></div>
                     </div>   
                 </div>
-            <div className="carousel-container  border">
+            <div className="carousel-container ">
                 <Slider {...settings} className=''>
                     <div className='bg-stone-800 p-2 mt-10 '>
                         <div className='border p-3 flex flex-col gap-5'>
@@ -120,14 +111,6 @@ const SliderSick = () => {
                     </div>
                     
                 </Slider>
-                <div className="custom-buttons flex justify-between ">
-                    <button onClick={goToPrev}>
-                    <FontAwesomeIcon icon={faChevronLeft} />
-                    </button>
-                    <button onClick={goToNext}>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                    </button>
-                </div>
             </div>
         </div>
         

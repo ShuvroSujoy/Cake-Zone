@@ -5,17 +5,20 @@ import {BiLogoTwitter} from "react-icons/bi"
 import {FaFacebookF} from "react-icons/fa6"
 import {BiLogoLinkedin} from "react-icons/bi"
 import {BsArrowRight} from "react-icons/bs"
+import {AiOutlineArrowUp} from "react-icons/ai"
+
+
 
 const Footer = () => {
     return (
         <div >
-            <div className='bg-[url(src/img/bg.jpg)] w-screen h-[300px] absolute 
-            '>
-            <div className='bg-stone-900 h-[300px] opacity-80'>
+            <div className='bg-[url(src/img/bg.jpg)] w-screen  absolute 
+            '> 
+            <div className='bg-stone-900 lg:h-[300px] opacity-80  py-10 lg:py-0 '>
                 <div className='container mx-auto '>
-                    <div className='flex gap-10 '>
+                    <div className='lg:flex gap-10 '>
                         {/*  */}
-                        <div className='w-[330px]  h-[330px] bg-orange-400 flex justify-center items-center '>
+                        <div className='w-[330px]  h-[330px] bg-orange-400 hidden lg:flex lg:justify-center items-center '>
                             <div className='w-[315px] h-[315px] border p-2 text-center text-white flex flex-col justify-center items-center'>
                                 <div className='flex items-center gap-2'>
                                     <FaCakeCandles className='text-black' size={30}/>
@@ -25,7 +28,7 @@ const Footer = () => {
                             </div>
                         </div>
                         {/* GET IN TOUCH */}
-                        <div className=' text-white flex mt-10 justify-between gap-10'>
+                        <div className=' text-white grid lg:grid-cols-3 md:grid-cols-2 mt-10 '>
                             <div>
                                 <h2 className='text-orange-400 font font-Nijam text-xl'>GET IN TOUCH</h2>
                                 <div className='mt-5'>
@@ -81,8 +84,11 @@ const Footer = () => {
                 </div>
                 
             </div>
-            <div className='bg-black h-[60px] text-center text-white flex items-center justify-center'>
-                <p>&copy; Your Site Name. All Rights Reserved. Designed by <u>HTML Codex</u></p>
+            <div className='bg-black h-[60px] text-center text-white flex items-center justify-center gap-4'>
+                <p className='md:text-base text-[10px] '>&copy; Your Site Name. All Rights Reserved. Designed by <u>HTML Codex</u></p>
+                <div className='h-[60px] bg-orange-400 w-[60px] lg:relative -right-[300px] flex justify-center items-center'>
+                   <AiOutlineArrowUp className='border ' size={35} /> 
+                </div>
             </div>
         </div>
         </div>
