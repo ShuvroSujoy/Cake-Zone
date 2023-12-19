@@ -24,7 +24,7 @@ const Home = () => {
                                 </div> 
                             </div>
                             <div className='flex items-center'>
-                                <Lottie className='md:w-[150px] w-[100px]' animationData={groovyWalkAnimation} loop={true} />
+                                <Lottie className='md:w-[150px] w-[100px]' animationData={groovyWalkAnimation}  />
                                 <h3 className='md:text-xl font-bold text-white '>Play Video</h3>
                             </div>   
                         </div>

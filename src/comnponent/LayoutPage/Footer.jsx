@@ -19,8 +19,8 @@ const Footer = () => {
                     <div className='lg:flex gap-10 '>
                         {/*  */}
                         <div className='w-[330px]  h-[330px] bg-orange-400 hidden lg:flex lg:justify-center items-center '>
-                            <div className='w-[315px] h-[315px] border p-2 text-center text-white flex flex-col justify-center items-center'>
-                                <div className='flex items-center gap-2'>
+                            <div className='w-[305px] h-[315px] border p-2 text-center text-white flex flex-col justify-center items-center'>
+                                <div className='flex items-center gap-2 '>
                                     <FaCakeCandles className='text-black' size={30}/>
                                     <h1 className='text-[30px] font-bold uppercase  text-white '>Cakezone</h1>
                                 </div>
